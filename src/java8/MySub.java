@@ -19,7 +19,7 @@ public class MySub extends MySuper {
         System.out.println("I am SUB constructor");
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         MySub mySub_first = new MySub();
         MySub mySub_second = new MySub();
     }

@@ -6,7 +6,7 @@ public class SortNumbers {
     //sort a array containing 0, 1 and 2
 //three-way Partitioning
     public static void Sort012(int[] array, int end) {
-        int start = 0, mid = 0,pivot = 1;
+        int start = 0, mid = 0, pivot = 1;
 
         while (mid <= end) {
             if (array[mid] < pivot) { //current element is 0

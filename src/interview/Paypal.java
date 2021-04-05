@@ -4,29 +4,25 @@ public class Paypal {
     public static void main(String[] args) {
         //Find steps taken to type a word, using a unique keypad.
         //keyboard = "abcdefghijklmnopqrstuvwxyz", word = "cba", start_pos=0, answer=4
-        String word = "cba";
+        String word = "fba";
         String keyboard = "abcdefghijklmnopqrstuvwxyz";
 
-        int count = 0;
+        int totalCount = 0;
         for (int i = 0; i < word.length(); i++) {
+            int temp = 0;
 
             for (int j = 0; j < keyboard.length(); j++) {
-                count++;
+                temp++;
+
                 char a = word.charAt(i);
                 char b = keyboard.charAt(j);
 
                 if (a == b) {
-                    if (i > 0) {
-                        if (count > j) {
-                            count = count - j;
-                        } else {
-                            count = count + j;
-                        }
-                    }
+                    totalCount += temp;
                     break;
                 }
             }
-            //System.out.println(count);
+            System.out.println(totalCount);
         }
 
     }

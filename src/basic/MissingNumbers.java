@@ -2,7 +2,7 @@ package basic;
 
 public class MissingNumbers {
     public static void main(String[] args) {
-        int[] input = { 1, 1, 2, 3, 5, 5, 7, 9, 9, 9 };
+        int[] input = {1, 1, 2, 3, 5, 5, 7, 9, 9, 9};
         int[] register = new int[100];
 
         for (int i : input) {

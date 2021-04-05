@@ -2,7 +2,7 @@ package basic;
 
 import java.util.Stack;
 
-public class Test3 {
+public class BalanceExpression {
     public static void main(String[] args) {
         //System.out.println(balancedParenthensies("{[()]}"));
         System.out.println(balancedParenthensies("{}[()]"));
